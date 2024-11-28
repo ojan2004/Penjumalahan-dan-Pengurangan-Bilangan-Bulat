@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal Pilihan Ganda</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            color: #2d3748;
+            background-color: #e6f7ff;
+            font-size: larger;
+            font-weight: bold;
+            animation: fadeInDown 1s ease-in-out;
+        }
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        form {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 600px;
+            background-color: #e6f7ff;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        form p {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #2c5282;
+        }
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #38a169;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #2f855a;
+        }
+        #result {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #2d3748;
+        }
+        #feedback {
+            margin: 20px auto;
+            max-width: 600px;
+            padding: 10px;
+            background-color: #f7fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+        }
+        nav a {
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #38a169;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a class="text-2xl font-bold text-green-500" href="#">
+                MATEMATIKA
+            </a>
+            <ul class="flex space-x-6 text-right">
+                <li>
+                    <a class="text-gray-700 hover:text-green-500" href="Home.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a class="text-gray-700 hover:text-green-500" href="materi.html">
+                        Materi
+                    </a>
+                </li>
+                <li>
+                    <a class="text-gray-700 hover:text-green-500" href="Latihan.html">
+                        Latihan
+                    </a>
+                </li>
+            </ul>
+            <a class="bg-green-500 text-white px-4 py-2 rounded shadow-md hover:bg-green-600" href="#">
+                Get Started
+            </a>
+        </div>
+    </nav>
+    <h1>Kuis Penjumlahan dan Pengurangan Bilangan Bulat</h1>
+    <form id="quiz">
+        <!-- Soal 1 -->
+        <p>1. Berapakah hasil dari 7 + 5?</p>
+        <input type="radio" name="1" value="a"> a) 10<br>
+        <input type="radio" name="1" value="b"> b) 12<br>
+        <input type="radio" name="1" value="c"> c) 15<br>
+        <input type="radio" name="1" value="d"> d) 14<br>
+
+        <!-- Soal 2 -->
+        <p>2. Berapakah hasil dari 15 - 8?</p>
+        <input type="radio" name="2" value="a"> a) 5<br>
+        <input type="radio" name="2" value="b"> b) 7<br>
+        <input type="radio" name="2" value="c"> c) 6<br>
+        <input type="radio" name="2" value="d"> d) 8<br>
+
+        <!-- Soal 3 -->
+        <p>3. Hasil dari -4 + 9 adalah?</p>
+        <input type="radio" name="3" value="a"> a) -5<br>
+        <input type="radio" name="3" value="b"> b) 5<br>
+        <input type="radio" name="3" value="c"> c) 13<br>
+        <input type="radio" name="3" value="d"> d) -13<br>
+
+        <!-- Soal 4 -->
+        <p>4. Berapakah hasil dari -10 - 3?</p>
+        <input type="radio" name="4" value="a"> a) -7<br>
+        <input type="radio" name="4" value="b"> b) -13<br>
+        <input type="radio" name="4" value="c"> c) 13<br>
+        <input type="radio" name="4" value="d"> d) -10<br>
+
+        <!-- Soal 5 -->
+        <p>5. Hasil dari 8 - (-3) adalah?</p>
+        <input type="radio" name="5" value="a"> a) 5<br>
+        <input type="radio" name="5" value="b"> b) -5<br>
+        <input type="radio" name="5" value="c"> c) 11<br>
+        <input type="radio" name="5" value="d"> d) -11<br>
+
+        <!-- Soal 6 -->
+        <p>6. Berapakah hasil dari -6 + (-4)?</p>
+        <input type="radio" name="6" value="a"> a) -10<br>
+        <input type="radio" name="6" value="b"> b) -2<br>
+        <input type="radio" name="6" value="c"> c) 2<br>
+        <input type="radio" name="6" value="d"> d) 10<br>
+
+        <!-- Soal 7 -->
+        <p>7. Hasil dari 3 + 0 adalah?</p>
+        <input type="radio" name="7" value="a"> a) 0<br>
+        <input type="radio" name="7" value="b"> b) 3<br>
+        <input type="radio" name="7" value="c"> c) -3<br>
+        <input type="radio" name="7" value="d"> d) 1<br>
+
+        <!-- Soal 8 -->
+        <p>8. Berapakah hasil dari -8 - (-2)?</p>
+        <input type="radio" name="8" value="a"> a) -10<br>
+        <input type="radio" name="8" value="b"> b) -6<br>
+        <input type="radio" name="8" value="c"> c) 6<br>
+        <input type="radio" name="8" value="d"> d) 10<br>
+
+        <!-- Soal 9 -->
+        <p>9. Hasil dari 20 + (-15) adalah?</p>
+        <input type="radio" name="9" value="a"> a) 35<br>
+        <input type="radio" name="9" value="b"> b) -35<br>
+        <input type="radio" name="9" value="c"> c) 5<br>
+        <input type="radio" name="9" value="d"> d) -5<br>
+
+        <!-- Soal 10 -->
+        <p>10. Berapakah hasil dari -12 + 7?</p>
+        <input type="radio" name="10" value="a"> a) -5<br>
+        <input type="radio" name="10" value="b"> b) 5<br>
+        <input type="radio" name="10" value="c"> c) -19<br>
+        <input type="radio" name="10" value="d"> d) 19<br>
+
+        <button type="button" onclick="checkAnswers()">Submit</button>
+    </form>
+
+    <p id="result"></p>
+    <div id="feedback"></div>
+
+    <script>
+        function checkAnswers() {
+            const correctAnswers = {
+                1: 'b',
+                2: 'b',
+                3: 'b',
+                4: 'b',
+                5: 'c',
+                6: 'a',
+                7: 'b',
+                8: 'b',
+                9: 'c',
+                10: 'a'
+            };
+
+            let score = 0;
+            let feedback = "";
+
+            for (const [question, answer] of Object.entries(correctAnswers)) {
+                const userAnswer = document.querySelector(`input[name="${question}"]:checked`);
+                if (userAnswer) {
+                    if (userAnswer.value === answer) {
+                        score++;
+                        feedback += `<p>${question}: Benar</p>`;
+                    } else {
+                        feedback += `<p>${question}: Salah. Jawaban yang benar adalah ${answer}</p>`;
+                    }
+                } else {
+                    feedback += `<p>${question}: Tidak dijawab</p>`;
+                }
+            }
+
+            document.getElementById('result').innerText = `Skor Anda: ${score}/10`;
+            document.getElementById('feedback').innerHTML = feedback;
+        }
+    </script>
+</body>
+</html>
