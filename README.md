@@ -66,7 +66,7 @@
      </a>
      <ul class="flex space-x-6"; text-align="right">
       <li>
-       <a class="text-gray-700" href="#" >
+       <a class="text-gray-700" href="Home.html" >
         Home
        </a>
       </li>
