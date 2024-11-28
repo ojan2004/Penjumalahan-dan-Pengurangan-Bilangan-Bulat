@@ -76,7 +76,7 @@
        </a>
       </li>
       <li>
-       <a class="text-gray-700" href="tugas.php">
+       <a class="text-gray-700" href="Latihan.html">
         Latihan
        </a>
       </li>
